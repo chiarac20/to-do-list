@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport", initial-scale=1.0">
+    <link rel="stylesheet" href="toDoList.css">
+    <title>To do list</title>
+</head>
+<body>
+    <form id="insertion-form">
+        <input type="text" id="input">
+        <button type="submit" disabled="true" id="add-button"> ADD TO THE TO DO LIST </button>
+    </form>   
+    <br>
+    <div  id="radio-button-space" class="display-none">
+        <label class="radio-indicator"> 
+            <input type="radio" name="show-button" id="show-all" checked>
+            <span>Show all</span>  
+        </label>
+        <label class="radio-indicator"> 
+            <input type="radio" name="show-button" id="show-done">
+            <span>Show done</span>
+        </label>
+        <label class="radio-indicator"> 
+            <input type="radio" name="show-button" id="show-not-done">
+            <span>Show not done</span>
+        </label>    
+    </div>
+    <ol id="tasksList"></ol> 
+    <script src="toDoList.js"></script>
+</body>
+</html>

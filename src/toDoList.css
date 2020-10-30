@@ -1,0 +1,31 @@
+.display-none {
+    display: none;
+}
+
+.hide-done .task-done {
+    display: none;
+}
+
+.hide-undone .task-undone {
+    display: none;
+}
+
+.radio-indicator > span {
+    border: 1px blue solid;
+    margin: 2px;
+    padding: 5px;
+    border-radius: 15px;
+    cursor: pointer;
+    text-transform: capitalize;
+    font-family: serif;
+    color: brown;
+}
+
+.radio-indicator > input:checked + span {
+    background-color: lightblue;
+    font-weight: bold;
+}
+
+.radio-indicator > input {
+    display: none;
+}
